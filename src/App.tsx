@@ -15,7 +15,7 @@ import Footer from './components/Footer';
 function App() {
   return (
     <ScrollAnimationProvider>
-      <div className="bg-gradient-to-br from-teal-900 via-teal-800 to-emerald-900 min-h-screen">
+      <div className="bg-gradient-to-br from-amber-50 via-amber-100 to-amber-200 min-h-screen">
         <Header />
         <main>
           <Hero />

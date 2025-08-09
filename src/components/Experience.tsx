@@ -54,123 +54,109 @@ const Experience = () => {
 
   // Updated skills without years
   const skills = {
-    "💻 Programming Languages": [
-      { name: "Python", level: "advanced" },
-      { name: "Java", level: "advanced" },
-      { name: "JavaScript", level: "intermediate" },
-      { name: "TypeScript", level: "intermediate" },
-      { name: "C", level: "intermediate" },
-      { name: "C++", level: "intermediate" },
-      { name: "HTML", level: "advanced" },
-      { name: "CSS", level: "advanced" },
-      { name: "SQL", level: "intermediate" }
+    "💻 Programmation ": [
+      { name: "Arduino" },
+
+      { name: "VHDL" },
+      { name: "DSP" },
+      { name: "Assembleur" },
+      { name: "C" },
+      { name: "Java" },
+      { name: "Python" },
+      { name: ".NET (C#)" },
+      { name: "Typescript" },
+      { name: "Javascript" }
     ],
-    "🛠️ Frameworks & Tools": [
-      { name: "FastAPI", level: "advanced" },
-      { name: "Flask", level: "advanced" },
-      { name: "React", level: "advanced" },
-      { name: "Node.js", level: "intermediate" },
-      { name: "Docker", level: "intermediate" },
-      { name: "Git", level: "advanced" },
-      { name: "CI/CD", level: "intermediate" },
-      { name: "Linux", level: "intermediate" },
-      { name: "AWS", level: "intermediate" }
+    "🛠️ Frameworks et Bibliothèques": [
+      { name: "Spring Boot" },
+      { name: "Angular" },
+      { name: "React" },
+      { name: "Node.js" },
+      { name: "Express.js" },
+      { name: "Laravel" },
+      { name: "Django" },
+      { name: "FastAPI" },
+      { name: " Tailwind CSS" },
+      { name: " Bootstrap" }
     ],
-    "📊 Data & Analytics": [
-      { name: "Jupyter", level: "advanced" },
-      { name: "Pandas", level: "advanced" },
-      { name: "Numpy", level: "advanced" },
-      { name: "MongoDB", level: "intermediate" },
-      { name: "PostgreSQL", level: "intermediate" },
-      { name: "Tableau", level: "intermediate" },
-      { name: "PowerBI", level: "beginner" },
-      { name: "JSON", level: "advanced" }
+    "📊 Bases de données": [
+      { name: "MySQL" },
+      { name: "SQL" },
+      { name: "PL/SQL" },
+      { name: "MongoDB" },
+      { name: "No-SQL" },
+
     ],
-    "🚀 Development & Soft Skills": [
-      { name: "System Design", level: "intermediate" },
-      { name: "REST APIs", level: "advanced" },
-      { name: "Microservices", level: "intermediate" },
-      { name: "Agile/Scrum", level: "intermediate" },
-      { name: "Technical Writing", level: "advanced" },
-      { name: "Team Leadership", level: "intermediate" }
+    "🚀 Outils CI/CD": [
+      { name: "Docker" },
+      { name: "Docker Compose" },
+      { name: "Jenkins" },
+      { name: "Vagrant" },
+      { name: "SonarQube" },
+      { name: "Git" },
+      { name: "GitLab" },
+      { name: "Nexus" },
+      { name: "WSL" },
+      { name: "Portainer" }
     ]
   };
 
-  // Function to get skill color based on level
-  const getSkillColor = (level: string) => {
-    switch (level) {
-      case 'advanced':
-        return 'bg-gradient-to-r from-yellow-500 to-orange-500';
-      case 'intermediate':
-        return 'bg-gradient-to-r from-blue-500 to-blue-600';
-      case 'beginner':
-        return 'bg-gradient-to-r from-green-500 to-green-600';
-      default:
-        return 'bg-gradient-to-r from-teal-600 to-cyan-600';
-    }
-  };
 
-  // Fixed coursework with shorter names for better uniformity
-  const coursework = [
-    "Foundations",
-    "Data Structures", 
-    "Low-Level Programming",
-    "Web Development",
-    "Software Design",
-    "AI/ML Modeling",
-    "Operating Systems",
-    "Database Systems",
-    "Computer Networks",
-    "Systems Programming",
-    "OOP in C++",
-    "Distributed Systems",
-    "Software Implementation",
-    "Computer Architecture",
-    "Cloud Computing",
-    "Cybersecurity"
-  ];
+
+
+
 
   // Enhanced experiences with more details
   const experiences = [
     {
       id: 1,
-      title: "Software Engineer Intern",
-      organization: "Mahamed Konsulting",
-      period: "Apr 2025 - Present",
-      location: "Seattle, WA",
-      description: "Built and deployed a responsive web platform enabling students to receive resume reviews and access real-time internship listings through integrated third-party APIs.",
-      skills: ["React", "Node.js", "APIs"],
-      highlights: ["Built responsive web platform", "Integrated third-party APIs", "Deployed production system"]
+      title: "Stage PFE-Plateforme e-tourisme B2B/B2C",
+      organization: "Digital group performance",
+      period: "Janvier 2025 - Juin 2025",
+      location: "Tunis",
+      description: "Conception et développement d’une application web permettant aux clients de réserver en ligne et aux prestataires (hôtels/agences) de publier leurs offres, avec intégration du paiement en ligne, de notifications, d’un système de recommandation intelligent et d’un chatbot IA propulsé par Groq. Mise en place d’un algorithme de machine learning pour analyser la compétitivité des prix des hôtels, ainsi que l’intégration d’APIs externes telles que Google Auth, Cloudinary, MapTiler, KConnect, API météo, Booking et Calendarific. Déploiement de l’infrastructure DevOps incluant la conteneurisation (Docker, Docker Compose), la CI/CD et le suivi/monitoring des logs.",
+      skills: ["React", "Node.js", "FastAPI", "MongoDB", "Python", "Scikit-learn", "Docker", "CI/CD"],
+
     },
     {
       id: 2,
-      title: "Tech Prep Fellow",
-      organization: "CodePath",
-      period: "Jan 2025 - Apr 2025",
-      location: "Remote",
-      description: "Completed a rigorous training program focused on data structures, algorithms, and system design. Solved LeetCode-style problems covering arrays, linked lists, trees, and graphs.",
-      skills: ["Python", "Algorithms", "System Design"],
-      highlights: ["Completed rigorous training", "Solved 100+ LeetCode problems", "Mastered system design concepts"]
+      title: "Stage D'ingénieur-Synchronisation de calendriers",
+      organization: "HopeHorizon",
+      period: " Juin 2024 - Août 2024",
+      location: "Ariana Tunis",
+      description: "Lors de ce stage, j’ai travaillé sur la mise en place d’une fonctionnalité de synchronisation des rendez-vous de l’application avec Google Calendar et Apple Calendar. J’ai développé, avec React, une interface incluant un calendrier interactif permettant aux utilisateurs de visualiser leurs rendez-vous, ainsi que deux boutons dédiés à la synchronisation avec Google et Apple. Du côté technique, j’ai intégré les API Google et Apple en implémentant le mécanisme d’authentification OAuth, puis en gérant les flux de synchronisation afin que chaque ajout, modification ou suppression de rendez-vous dans l’application soit automatiquement répercuté dans les calendriers externes. Ce travail a nécessité la gestion des permissions utilisateurs, la communication sécurisée avec les services tiers et l’optimisation du processus pour garantir une expérience fluide et fiable.",
+      skills: ["FastAPI", "React.js", "MongoDB", "OAuth"],
+
     },
     {
       id: 3,
-      title: "Undergraduate Research",
-      organization: "Ohio State University",
-      period: "Jan 2024 - Jul 2024",
-      location: "Ohio",
-      description: "Designed compilers and software tools optimized for data-intensive applications on GPUs, enhancing processing efficiency and reducing processing time.",
-      skills: ["C", "GPU Programming", "Compilers"],
-      highlights: ["Designed GPU compilers", "Optimized data processing", "Reduced processing time by 30%"]
+      title: "Stage D'ingénieur-Application de gestion pédagogique",
+      organization: "HorizonFormation",
+      period: "Juin 2024 - Septembre 2024",
+      location: "à distance",
+      description: "J’ai développé une application full-stack pour un centre de formation, permettant la gestion complète des classes, des cours, des enseignants et des salles. Les responsables peuvent créer et organiser les emplois du temps via un calendrier interactif, en planifiant chaque séance selon l’horaire, la salle et le formateur. La plateforme intègre un système d’authentification sécurisée avec Axios et jetons, ainsi qu’un contrôle d’accès basé sur les rôles (RBAC) pour gérer les droits des utilisateurs.",
+      skills: ["React Js", "Node.js", "MongoDB"],
+
     },
     {
       id: 4,
-      title: "STEM Instructor",
-      organization: "Somali East African Community Services",
-      period: "Aug 2024 - Present",
-      location: "Ohio",
-      description: "Taught weekly STEM and programming classes to Somali high school students, focusing on low-level programming using the C language.",
-      skills: ["C", "Teaching", "Mentoring"],
-      highlights: ["Taught 20+ students", "Developed curriculum", "Improved student engagement by 40%"]
+      title: "Stage D'immersion-Virtualisation avec Docker",
+      organization: "TEAMWILL",
+      period: "Juillet 2023 - Août 2023",
+      location: "Lac1 Tunis",
+      description: "J’ai suivi une formation sur la virtualisation, la conteneurisation et le déploiement d’applications, me permettant d’acquérir des compétences pratiques sur Docker et Docker Compose. Dans ce cadre, j’ai créé des images personnalisées, configuré des conteneurs et déployé une application complète en environnement isolé, tout en maîtrisant les étapes clés du cycle de déploiement.",
+      skills: ["Docker", " Docker Compose", "Linux"],
+
+    },
+    {
+      id: 5,
+      title: "Stage PFE- Réalisation d'un banc d'essai électronique",
+      organization: "PARENIN",
+      period: "Février 2022 - Juin 2022",
+      location: "Sijoumi Tunis",
+      description: "J’ai réalisé l’étude et le montage d’un banc d’essai basé sur une carte Arduino afin de simuler et analyser le fonctionnement d’un moteur Caterpillar C13. Le système permet de détecter et d’indiquer différents états de fonctionnement ou de panne grâce à des capteurs, des interrupteurs, des voyants lumineux et un afficheur pour les codes d’erreur. Ce banc d’essai reproduit plusieurs scénarios, tels que la variation de température ou les anomalies des injecteurs, afin de comprendre et diagnostiquer le comportement de la machine.",
+      skills: ["Arduino IDE (C/C++)", " HTML", "Électronique analogique et numérique",],
+
     }
   ];
 
@@ -227,33 +213,29 @@ const Experience = () => {
     <section ref={sectionRef} id="experience" className="py-20">
       <div className="container mx-auto px-6">
         {/* Animated Title */}
-        <h2 className={`text-4xl font-bold text-center mb-12 bg-gradient-to-r from-teal-400 to-cyan-400 bg-clip-text text-transparent transition-all duration-1000 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}>
-          Experience & Skills
+        <h2 className={`text-4xl font-bold text-center mb-12 bg-gradient-to-r from-amber-500  to-amber-500  bg-clip-text text-transparent transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}>
+          Expérience et compétences
         </h2>
 
         {/* Animated Tab Navigation */}
-        <div className={`flex flex-wrap justify-center mb-8 bg-gray-800/30 backdrop-blur-sm rounded-2xl p-2 max-w-4xl mx-auto border border-teal-400/20 gap-1 transition-all duration-1000 ${
-          isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-        }`}
-        style={{ transitionDelay: isVisible ? '300ms' : '0ms' }}
+        <div className={`flex flex-wrap justify-center mb-8 bg-gray-800/30 backdrop-blur-sm rounded-2xl p-2 max-w-4xl mx-auto border border-amber-400/20 gap-1 transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+          }`}
+          style={{ transitionDelay: isVisible ? '300ms' : '0ms' }}
         >
           {[
-            { key: 'experience', label: 'Experience', icon: '💼' },
-            { key: 'skills', label: 'Skills', icon: '🛠️' },
-            { key: 'coursework', label: 'Coursework', icon: '📚' },
-            { key: 'certifications', label: 'Certs', icon: '🏆' },
+            { key: 'experience', label: 'Expérience', icon: '💼' },
+            { key: 'skills', label: 'compétences', icon: '🛠️' },
+            { key: 'certifications', label: ' Certifications', icon: '🏆' },
             { key: 'leadership', label: 'Leadership', icon: '👥' }
           ].map((tab) => (
             <button
               key={tab.key}
               onClick={() => setActiveTab(tab.key)}
-              className={`px-2 py-1.5 sm:px-3 sm:py-2 md:px-4 md:py-3 rounded-lg md:rounded-full transition-all duration-500 text-center ${
-                activeTab === tab.key
-                  ? 'bg-gradient-to-r from-teal-600 to-cyan-600 text-white shadow-lg scale-105'
+              className={`px-2 py-1.5 sm:px-3 sm:py-2 md:px-4 md:py-3 rounded-lg md:rounded-full transition-all duration-500 text-center ${activeTab === tab.key
+                  ? 'bg-gradient-to-r from-amber-600 to-amber-600 text-white shadow-lg scale-105'
                   : 'bg-transparent text-gray-300 hover:bg-gray-700/50 hover:text-white'
-              }`}
+                }`}
             >
               <div className="flex flex-col sm:flex-row items-center sm:space-x-1">
                 <span className="text-xs sm:text-sm md:text-base">{tab.icon}</span>
@@ -271,31 +253,29 @@ const Experience = () => {
               {/* Timeline Container */}
               <div className="relative max-w-4xl mx-auto">
                 {/* Timeline Line */}
-                <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-teal-500 to-cyan-500 rounded-full"></div>
+                <div className="absolute left-8 top-0 bottom-0 w-1 bg-gradient-to-b from-amber-500 to-amber-500 rounded-full"></div>
 
                 {/* Timeline Items */}
                 <div className="space-y-8">
                   {experiences.map((exp, index) => {
                     const isExpanded = selectedExperience === exp.id;
-                    
+
                     return (
                       <div
                         key={exp.id}
-                        className={`relative transition-all duration-700 ${
-                          isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
-                        }`}
+                        className={`relative transition-all duration-700 ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-10'
+                          }`}
                         style={{ transitionDelay: `${500 + index * 200}ms` }}
                       >
                         {/* Timeline Dot */}
-                        <div className="absolute left-6 w-4 h-4 bg-teal-500 rounded-full border-4 border-gray-900 z-10 transition-all duration-300 hover:scale-125"></div>
+                        <div className="absolute left-6 w-4 h-4 bg-amber-500 rounded-full border-4 border-gray-900 z-10 transition-all duration-300 hover:scale-125"></div>
 
                         {/* Timeline Card */}
-                        <div 
-                          className={`ml-20 bg-gray-800/50 backdrop-blur-sm rounded-xl border cursor-pointer transition-all duration-300 ${
-                            isExpanded 
-                              ? 'border-teal-400 shadow-xl shadow-teal-400/20 scale-105' 
-                              : 'border-teal-400/30 hover:border-teal-400 hover:scale-102'
-                          }`}
+                        <div
+                          className={`ml-20 bg-gray-800/50 backdrop-blur-sm rounded-xl border cursor-pointer transition-all duration-300 ${isExpanded
+                              ? 'border-amber-400 shadow-xl shadow-amber-400/20 scale-105'
+                              : 'border-amber-400/30 hover:border-amber-400 hover:scale-102'
+                            }`}
                           style={{
                             transformOrigin: 'left center',
                             zIndex: isExpanded ? 10 : 1,
@@ -306,9 +286,9 @@ const Experience = () => {
                             {/* Header */}
                             <div className="flex justify-between items-start mb-4">
                               <div className="flex-1">
-                                <h3 className="text-xl font-bold text-white mb-2">{exp.title}</h3>
-                                <p className="text-teal-400 font-medium mb-1">{exp.organization}</p>
-                                <div className="flex items-center text-gray-400 text-sm">
+                                <h3 className="text-xl font-bold text-amber-900 mb-2">{exp.title}</h3>
+                                <p className="text-amber-400 font-medium mb-1">{exp.organization}</p>
+                                <div className="flex items-center text-gray-700 text-sm">
                                   <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                                   </svg>
@@ -321,14 +301,13 @@ const Experience = () => {
                                   {exp.location}
                                 </div>
                               </div>
-                              
+
                               {/* Expand Button */}
-                              <div 
-                                className={`ml-4 p-2 rounded-full bg-teal-600/20 hover:bg-teal-600/30 transition-all duration-300 ${
-                                  isExpanded ? 'rotate-180' : 'rotate-0'
-                                }`}
+                              <div
+                                className={`ml-4 p-2 rounded-full bg-teal-600/20 hover:bg-teal-600/30 transition-all duration-300 ${isExpanded ? 'rotate-180' : 'rotate-0'
+                                  }`}
                               >
-                                <svg className="w-5 h-5 text-teal-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <svg className="w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                                 </svg>
                               </div>
@@ -339,39 +318,23 @@ const Experience = () => {
 
                             {/* Expanded Content */}
                             {isExpanded && (
-                              <div className="space-y-6 pt-4 border-t border-gray-700/50 animate-slideDown">
-                                {/* Key Highlights */}
-                                <div>
-                                  <h4 className="text-teal-400 font-semibold mb-4 flex items-center">
-                                    <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
-                                    </svg>
-                                    Key Highlights
-                                  </h4>
-                                  <div className="grid md:grid-cols-1 gap-3">
-                                    {exp.highlights.map((highlight, idx) => (
-                                      <div key={idx} className="flex items-start bg-gray-700/30 p-3 rounded-lg">
-                                        <div className="w-2 h-2 bg-teal-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                                        <span className="text-gray-300 text-sm">{highlight}</span>
-                                      </div>
-                                    ))}
-                                  </div>
-                                </div>
+                              <div className="space-y-6 pt-4 border-t border-amber-700/50 animate-slideDown">
+
 
                                 {/* Technologies Used */}
                                 <div>
-                                  <h4 className="text-teal-400 font-semibold mb-4 flex items-center">
+                                  <h4 className="text-amber-400 font-semibold mb-4 flex items-center">
                                     <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" />
                                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
                                     </svg>
-                                    Technologies Used
+                                    Technologies utilisées
                                   </h4>
                                   <div className="flex flex-wrap gap-3">
                                     {exp.skills.map((skill, skillIndex) => (
                                       <span
                                         key={skillIndex}
-                                        className="bg-gradient-to-r from-teal-600 to-cyan-600 hover:from-teal-500 hover:to-cyan-500 text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105 cursor-pointer shadow-lg"
+                                        className="bg-gradient-to-r from-amber-600 to-amber-600 hover:from-amber-500 hover:to-amber-500 text-white px-4 py-2 rounded-full text-sm font-medium transition-all duration-200 hover:scale-105 cursor-pointer shadow-lg"
                                       >
                                         {skill}
                                       </span>
@@ -393,34 +356,17 @@ const Experience = () => {
           {/* Skills Tab with Staggered Animations */}
           {activeTab === 'skills' && (
             <>
-              <div className={`flex flex-col sm:flex-row justify-center items-center mb-6 space-y-2 sm:space-y-0 sm:space-x-4 bg-gray-800/30 backdrop-blur-sm rounded-xl p-3 sm:p-4 max-w-3xl mx-auto border border-teal-400/20 transition-all duration-700 ${
-                isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-              }`}
-              style={{ transitionDelay: '400ms' }}
-              >
-                <div className="flex items-center space-x-1">
-                  <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-gradient-to-r from-yellow-500 to-orange-500"></div>
-                  <span className="text-white font-medium text-xs sm:text-sm">Advanced</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-gradient-to-r from-blue-500 to-blue-600"></div>
-                  <span className="text-white font-medium text-xs sm:text-sm">Intermediate</span>
-                </div>
-                <div className="flex items-center space-x-1">
-                  <div className="w-3 h-3 sm:w-4 sm:h-4 rounded-full bg-gradient-to-r from-green-500 to-green-600"></div>
-                  <span className="text-white font-medium text-xs sm:text-sm">Beginner</span>
-                </div>
-              </div>
+
+
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 sm:gap-6">
                 {Object.entries(skills).map(([category, skillList], index) => (
-                  <div 
-                    key={category} 
-                    className={`bg-gray-800/50 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-teal-400/30 hover:border-teal-400 transition-all duration-700 ${
-                      isVisible 
-                        ? 'opacity-100 translate-y-0 scale-100' 
+                  <div
+                    key={category}
+                    className={`bg-gray-800/50 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-teal-400/30 hover:border-teal-400 transition-all duration-700 ${isVisible
+                        ? 'opacity-100 translate-y-0 scale-100'
                         : 'opacity-0 translate-y-16 scale-95'
-                    }`}
+                      }`}
                     style={{ transitionDelay: `${600 + index * 150}ms` }}
                   >
                     <h3 className="text-lg sm:text-xl font-bold text-white mb-4 text-center">{category}</h3>
@@ -428,7 +374,7 @@ const Experience = () => {
                       {skillList.map((skill, skillIndex) => (
                         <span
                           key={skillIndex}
-                          className={`${getSkillColor(skill.level)} text-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 hover:scale-105 cursor-pointer`}
+                          className={` text-white px-2 py-1 sm:px-3 sm:py-1.5 rounded-full text-xs sm:text-sm font-medium transition-all duration-300 hover:scale-105 cursor-pointer`}
                         >
                           {skill.name}
                         </span>
@@ -440,39 +386,17 @@ const Experience = () => {
             </>
           )}
 
-          {/* Mobile-Optimized Coursework Tab */}
-          {activeTab === 'coursework' && (
-            <div className={`bg-gray-800/50 backdrop-blur-sm p-4 sm:p-6 rounded-xl border border-teal-400/30 transition-all duration-700 ${
-              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-            }`}
-            style={{ transitionDelay: '500ms' }}
-            >
-              <h3 className="text-xl sm:text-2xl font-bold text-white mb-6 text-center">📚 Relevant Coursework</h3>
-              <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-2 sm:gap-3">
-                {coursework.map((course, index) => (
-                  <div
-                    key={index}
-                    className={`bg-gradient-to-r from-teal-600 to-cyan-600 text-white p-2 sm:p-3 rounded-lg text-center hover:from-teal-700 hover:to-cyan-700 transition-all duration-500 hover:scale-105 cursor-pointer min-h-[50px] sm:min-h-[60px] flex items-center justify-center ${
-                      isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
-                    }`}
-                    style={{ transitionDelay: `${700 + index * 50}ms` }}
-                  >
-                    <span className="text-xs sm:text-sm font-medium leading-tight">{course}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
+
+
 
           {/* Certifications Tab */}
           {activeTab === 'certifications' && (
             <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
               {certifications.map((cert, index) => (
-                <div 
-                  key={index} 
-                  className={`bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-teal-400/30 hover:border-teal-400 transition-all duration-700 hover:shadow-lg ${
-                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                  }`}
+                <div
+                  key={index}
+                  className={`bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-teal-400/30 hover:border-teal-400 transition-all duration-700 hover:shadow-lg ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                    }`}
                   style={{ transitionDelay: `${400 + index * 200}ms` }}
                 >
                   <h3 className="text-xl font-bold text-white mb-2">{cert.title}</h3>
@@ -514,11 +438,10 @@ const Experience = () => {
           {activeTab === 'leadership' && (
             <div className="grid md:grid-cols-1 lg:grid-cols-2 gap-6">
               {leadership.map((item, index) => (
-                <div 
-                  key={index} 
-                  className={`bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-teal-400/30 hover:border-teal-400 transition-all duration-700 hover:shadow-lg ${
-                    isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
-                  }`}
+                <div
+                  key={index}
+                  className={`bg-gray-800/50 backdrop-blur-sm p-6 rounded-xl border border-teal-400/30 hover:border-teal-400 transition-all duration-700 hover:shadow-lg ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+                    }`}
                   style={{ transitionDelay: `${400 + index * 200}ms` }}
                 >
                   <h3 className="text-xl font-bold text-white mb-2">{item.title}</h3>

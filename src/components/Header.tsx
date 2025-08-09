@@ -16,19 +16,22 @@ const Header = () => {
   }, []);
 
   return (
-    <header className={`transition-colors duration-300 ${scrolling ? 'bg-teal-800/90' : 'bg-teal-900/95'} backdrop-blur-md text-white sticky top-0 z-50 border-b border-teal-400/30`}>
+    <header className={`transition-colors duration-300 ${scrolling
+      ? 'bg-gradient-to-r from-amber-400/30 via-amber-500/30 to-amber-600/20'
+      : 'bg-gradient-to-r from-amber-600/20 via-amber-400/30 to-amber-500/30'
+      } backdrop-blur-md text-amber-500 sticky top-0 z-50 border-b border-amber-400`}>
       <nav className="container mx-auto px-6 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-2xl font-bold bg-gradient-to-r from-teal-400 via-cyan-400 to-blue-400 bg-clip-text text-transparent">
-            Mohamed Jirac
+          <div className="text-2xl font-bold bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent">
+            Farah Zekri
           </div>
 
           <div className="hidden md:flex space-x-8 mr-8">
-            <a href="#hero" className="hover:text-teal-400 transition-colors font-medium">Home</a>
-            <a href="#about" className="hover:text-teal-400 transition-colors font-medium">About</a>
-            <a href="#experience" className="hover:text-teal-400 transition-colors font-medium">Experience</a>
-            <a href="#projects" className="hover:text-teal-400 transition-colors font-medium">Projects</a>
-            <a href="#contact" className="hover:text-teal-400 transition-colors font-medium">Contact</a>
+            <a href="#hero" className="hover:text-amber-400 transition-colors font-medium">Accueil</a>
+            <a href="#about" className="hover:text-amber-400 transition-colors font-medium">À propos</a>
+            <a href="#experience" className="hover:text-amber-400 transition-colors font-medium">Expérience</a>
+            <a href="#projects" className="hover:text-amber-400 transition-colors font-medium">Projets</a>
+            <a href="#contact" className="hover:text-amber-400 transition-colors font-medium">Contact</a>
           </div>
 
           <button
